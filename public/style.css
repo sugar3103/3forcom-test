@@ -1,6 +1,6 @@
 a, u {
     text-decoration: none !important;
-    color: white !important;
+    
 }
 a:hover, u:hover{
     color: green !important;
@@ -8,6 +8,13 @@ a:hover, u:hover{
 }
 div {
     font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
 }
 /* Header start */
 
@@ -18,7 +25,9 @@ div {
     margin-left: 10px;
 }
 
-.white {
+.white, 
+.white a,
+.banner-text a {
     color: white;
 }
 
@@ -58,6 +67,18 @@ div {
     background: white;
     height: 500px;
     color: #cc9966;
+}
+.padding-left{
+    padding-left: 15px;
+}
+.fa-banner {
+    background: #7bc1b3;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 20px;
+    margin-top: -5px;
 }
 
 /* Body End */

@@ -53,28 +53,40 @@ export default function Body(props) {
                     <br></br>
                     <div className="d-flex justify-content-center">
                         <div className="banner-box col-sm-3">
-                            <p>Villa Lagoon Tile</p>
-                            <p>-------------</p>
+                            <div className="d-flex">
+                                <a href="_blank"></a>
+                                <div>
+                                    <p>Villa Lagoon Tile</p>
+                                    <p>-------------</p>
+                                </div>
+                            </div>
+
                             <br></br>
                             <div className="d-flex">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
+                                <i class="fas fa-map-marker-alt fa-banner"></i>
+                                <div className="padding-left">
                                     <p>901 Commerce Drive</p>
                                     <p>Unit 1-C, Gulf Shores, AL 36542-2834</p>
                                     <p>United States of America.</p>
                                 </div>
                             </div>
                             <div className="d-flex">
-                                <i class="fas fa-envelope"></i>
-                                <p>info@VillaLagoonTile.com</p>
+                                <i class="fas fa-envelope fa-banner"></i>
+                                <div className="padding-left">
+                                    <p>info@VillaLagoonTile.com</p>
+                                </div>
+
                             </div>
                             <div className="d-flex">
-                                <i class="fas fa-phone"></i>
-                                <p>1-251-968-3375</p>
+                                <i class="fas fa-phone fa-banner"></i>
+                                <div className="padding-left">
+                                    <p>1-251-968-3375</p>
+                                </div>
+
                             </div>
                             <div className="d-flex">
-                                <i class="fas fa-clock"></i>
-                                <div>
+                                <i class="fas fa-clock fa-banner"></i>
+                                <div className="padding-left">
                                     <p>9am-5pm, US Central Time</p>
                                     <p>(November-February UTC-5,</p>
                                     <p>March-October UTC-6).</p>
@@ -112,7 +124,7 @@ export default function Body(props) {
                                                         <a href="_blank">Lost your password?</a>
                                                     </span>
                                                 </div>
-                                                <button className="banner-submit">Login Now</button>
+                                                <button className="banner-submit">SUBMIT ></button>
                                             </form>
                                         </div>
                                     </div>

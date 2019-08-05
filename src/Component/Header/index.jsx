@@ -16,61 +16,41 @@ export default function Header() {
                 </div>
                 <div class="container">
                     <div className="row white">
-                        <a href="_blank"><i class="fas fa-phone fa-green"></i>1-251-968-3375</a>
-                        <a href="_blank"><i class="fas fa-envelope fa-green"></i> info@VillaLagoonTile.com</a>
+                        <a href="callto:1-251-968-3375"><i class="fas fa-phone fa-green"></i>1-251-968-3375</a>
+                        <a href="mailto:info@VillaLagoonTile.com"><i class="fas fa-envelope fa-green"></i> info@VillaLagoonTile.com</a>
                     </div>
                 </div>
             </nav>
-            <nav class="navbar navbar-expand-md 3rd-nav">
-                <div className="container logo">
-                    <img src="../assets/logo.png" />
+            <nav className="third-nav d-flex">
+                <div className="logo">
+                    <a href="/"><img src="../assets/logo.png" /></a>
                 </div>
-                <a class="logo" href="#">
-                    <p class="animated infinite zoomIn">Đường honganStore</p>
-                </a>
-                <ul>
-                    <li>
-                        <a href="#">Áo</a>
-                        {/* <!-- sub menu 1  --> */}
-                        <ul class="sub-menu1">
-                            <li>
-                                <a href="#">Áo thun</a>
-                                {/* <!-- sub menu thu 2 --> */}
-                                <ul class="sub-menu2">
-                                    <li><a href="#">Áo thun</a></li>
-                                    <li><a href="#">Áo thun trắng</a></li>
-                                    <li><a href="#">Áo thun đỏ</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Áo ba lỗ</a>
-                                <ul class="sub-menu2">
-                                    <li><a href="#">Áo ba lỗ</a></li>
-                                    <li><a href="#">Áo ba lỗ trắng</a></li>
-                                    <li><a href="#">Áo ba lỗ đỏ</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Áo Sơ-mi</a>
-                                <ul class="sub-menu2">
-                                    <li><a href="#">Áo sơ-mi</a></li>
-                                    <li><a href="#">Áo sơ-mi trắng</a></li>
-                                    <li><a href="#">Áo sơ-mi đỏ</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Váy</a>
 
+                <ul className="d-flex float-right">
+                    <li>
+                        <a href="/">HOME</a>
                     </li>
-                    <li><a href="#">SHORTS</a></li>
-                    <li><a href="#">Quần Jeans</a></li>
-                    <li><a href="#">Đầm</a></li>
-                    <li><a href="#">Jumpsuit</a></li>
+                    <li>
+                        <a href="/">CEMENT TILE</a>
+                    </li>
+                    <li>
+                        <a href="/">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="/">COMMERCIAL</a>
+                    </li>
+                    <li>
+                        <form action="/">
+                            <input style={{width: "180px"}} type="text" placeholder="Search.." name="search"/>
+                            
+                            <button className="button-search" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
                 </ul>
 
             </nav>
+
+
 
 
         </section>

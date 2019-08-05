@@ -1,45 +1,7 @@
 import React, { useState } from "react";
 
 export default function Body(props) {
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
-    const [error, setError] = useState("")
-    const [theModal, setTheModal] = useState({ visible: false })
-    const openSuccessModal = () => {
-        setTheModal({ visible: true })
-    }
-    const closeSuccessModal = (e) => {
-        e.preventDefault();
-        setTheModal({ visible: false })
-        props.history.push("./")
-    }
-    const onSubmit = async (e) => {
-        // e.preventDefault();
-        // try {
-        //     await firebase.auth().signInWithEmailAndPassword(email, password);
-        //     firebase.auth().onAuthStateChanged(user => {
-        //         if (user) {
-        //             setEmail("")
-        //             setPassword("")
-        //             openSuccessModal();
-        //         } else {
 
-        //         }
-        //     })
-        // } catch (error) {
-        //     setError(error.message)
-        // }
-        // // console.log(email, password)
-    }
-    const onChangeEmail = (e) => {
-        setEmail(e.target.value)
-    }
-    const onChangePassWord = (e) => {
-        setPassword(e.target.value)
-    }
-    const onRegister = () => {
-        props.history.push('./register')
-    }
     return (
         <section>
             <div className="container-fluid">
@@ -54,8 +16,8 @@ export default function Body(props) {
                     <div className="d-flex justify-content-center">
                         <div className="banner-box col-sm-3">
                             <div className="d-flex">
-                                <a href="_blank"></a>
-                                <div>
+                                <i style={{ color: "#ecf5fd" }} class="fas fa-map-marker-alt fa-village"></i>
+                                <div className="padding-left">
                                     <p>Villa Lagoon Tile</p>
                                     <p>-------------</p>
                                 </div>
@@ -63,7 +25,7 @@ export default function Body(props) {
 
                             <br></br>
                             <div className="d-flex">
-                                <i class="fas fa-map-marker-alt fa-banner"></i>
+                                <i class="fas fa-map-marker-alt fa-location"></i>
                                 <div className="padding-left">
                                     <p>901 Commerce Drive</p>
                                     <p>Unit 1-C, Gulf Shores, AL 36542-2834</p>
@@ -94,45 +56,53 @@ export default function Body(props) {
                             </div>
                         </div>
                         <div className="banner-box-2 col-sm-3">
-                            <h3>-------. Get in touch .-------</h3>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-8 offset-lg-2">
-                                        <div className="basic-login">
-                                            <h3>-------. Get in touch .-------</h3>
-                                            <p className="text-danger">{error}</p>
-                                            <form onSubmit={onSubmit}>
-
-                                                <input id="name"
-                                                    value={email}
-                                                    type="text"
-                                                    placeholder="Enter your email address"
-                                                    onChange={onChangeEmail} />
-                                                <br></br>
-                                                <br></br>
-                                                <input id="phone"
-                                                    type="phone"
-                                                    value={password}
-                                                    placeholder="Enter phone number"
-                                                    onChange={onChangePassWord} />
-                                                <div className="login-action mb-20 fix">
-                                                    <span className="log-rem f-left">
-                                                        <input id="remember" type="checkbox" />
-                                                        <label htmlFor="remember">Remember me!</label>
-                                                    </span>
-                                                    <span className="forgot-login f-right">
-                                                        <a href="_blank">Lost your password?</a>
-                                                    </span>
-                                                </div>
-                                                <button className="banner-submit">SUBMIT ></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                            <h4>-------. Get in touch .-------</h4>
+                            <form action="/">
+                                <input
+                                    style={{ width: "80%" }}
+                                    type="email"
+                                    placeholder="Enter your email address"
+                                    name="email" />
+                                <br></br>
+                                <br></br>
+                                <input
+                                    style={{ width: "80%" }}
+                                    type="phone"
+                                    placeholder="Enter phone number or Skype name"
+                                    name="phone" />
+                                <br></br>
+                                <br></br>
+                                <textarea rows="6" cols="27" placeholder="Message..." name="description">
+                                </textarea>
+                                <br></br>
+                                <br></br>
+                                <input
+                                    className="inputButton"
+                                    type="submit"
+                                    value="SUBMIT   &gt;"
+                                />
+                            </form>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-fluid">
+                <div className="d-flex">
+                    <div className="infor-contain">
+                        <div className="square-infor">
+                            <img src="../assets/envelop.gif" />
+                        </div>
+                        <br></br>
+                        <h5>Wholesale Inquiries</h5>
+                        <p>Please Contact Us</p>
+                    </div>
+                    <div className="infor-contain2">
+                        <div className="square-infor">
+                            <img src="../assets/Shape1.png" /><br></br>
+                        </div>
+                        <br></br>
+                        <h5>Samples and Ordering</h5>
+                        <p>Simply contact us through any of the means listed above, and our expert sales staff will take it from there. We study cement tile so you don't have to!</p>
                     </div>
 
                 </div>

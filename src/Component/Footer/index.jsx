@@ -22,15 +22,15 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="float-right footer-icon position-absolute">
-                        <a href="_blank"><i class="fab fa-facebook-square"></i></a>
-                        <a href="_blank"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="_blank"><i class="fab fa-twitter-square"></i></a>
-                        <a href="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="_blank"><i class="fab fa-pinterest-square"></i></a>
-                        <a href="_blank"><i class="fab fa-youtube-square"></i></a>
-                        <a href="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="_blank"><i class="fas fa-envelope-square"></i></a>
-                        <a href="_blank"><i class="fab fa-buysellads"></i></a>
+                        <a href="_blank"><i className="fab fa-facebook-square"></i></a>
+                        <a href="_blank"><i className="fab fa-google-plus-square"></i></a>
+                        <a href="_blank"><i className="fab fa-twitter-square"></i></a>
+                        <a href="_blank"><i className="fab fa-linkedin"></i></a>
+                        <a href="_blank"><i className="fab fa-pinterest-square"></i></a>
+                        <a href="_blank"><i className="fab fa-youtube-square"></i></a>
+                        <a href="_blank"><i className="fab fa-instagram"></i></a>
+                        <a href="_blank"><i className="fas fa-envelope-square"></i></a>
+                        <a href="_blank"><i className="fab fa-buysellads"></i></a>
                     </div>
                 </div>
             </div>

@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Body(props) {
 
     return (
         <section>
             <div className="container-fluid">
-                <div className="banner" style={{ backgroundImage: `url(../assets/Layer44.png)` }}>
+                <div className="banner banner-img">
                     {/* <img src="../assets/Layer44.png" /> */}
                     <div className="text-center banner-text">
                         <h3>Contact Villa Lagoon Tile</h3>
-                        <h5><a href="_black">Home </a><i class="fas fa-caret-right"></i> <a href="_blank">Contact Us</a></h5>
+                        <h5><a href="_black">Home </a><i className="fas fa-caret-right"></i> <a href="_blank">Contact Us</a></h5>
                     </div>
                     <br></br>
                     <br></br>
                     <div className="d-flex justify-content-center">
                         <div className="banner-box col-sm-3">
                             <div className="d-flex">
-                                <i style={{ color: "#ecf5fd" }} class="fas fa-map-marker-alt fa-village"></i>
+                                <i style={{ color: "#ecf5fd" }} className="fas fa-map-marker-alt fa-village"></i>
                                 <div className="padding-left">
                                     <p>Villa Lagoon Tile</p>
                                     <p>-------------</p>
@@ -25,7 +25,7 @@ export default function Body(props) {
 
                             <br></br>
                             <div className="d-flex">
-                                <i class="fas fa-map-marker-alt fa-location"></i>
+                                <i className="fas fa-map-marker-alt fa-location"></i>
                                 <div className="padding-left">
                                     <p>901 Commerce Drive</p>
                                     <p>Unit 1-C, Gulf Shores, AL 36542-2834</p>
@@ -33,21 +33,21 @@ export default function Body(props) {
                                 </div>
                             </div>
                             <div className="d-flex">
-                                <i class="fas fa-envelope fa-banner"></i>
+                                <i className="fas fa-envelope fa-banner"></i>
                                 <div className="padding-left">
                                     <p>info@VillaLagoonTile.com</p>
                                 </div>
 
                             </div>
                             <div className="d-flex">
-                                <i class="fas fa-phone fa-banner"></i>
+                                <i className="fas fa-phone fa-banner"></i>
                                 <div className="padding-left">
                                     <p>1-251-968-3375</p>
                                 </div>
 
                             </div>
                             <div className="d-flex">
-                                <i class="fas fa-clock fa-banner"></i>
+                                <i className="fas fa-clock fa-banner"></i>
                                 <div className="padding-left">
                                     <p>9am-5pm, US Central Time</p>
                                     <p>(November-February UTC-5,</p>
@@ -86,11 +86,12 @@ export default function Body(props) {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
+            <br></br>
+            <div className="container-fluid info-3">
                 <div className="d-flex">
                     <div className="infor-contain">
                         <div className="square-infor">
-                            <img src="../assets/envelop.gif" />
+                            <img src="../assets/envelop.gif" alt="envelop"/>
                         </div>
                         <br></br>
                         <h5>Wholesale Inquiries</h5>
@@ -98,7 +99,7 @@ export default function Body(props) {
                     </div>
                     <div className="infor-contain2">
                         <div className="square-infor">
-                            <img src="../assets/Shape1.png" /><br></br>
+                            <img src="../assets/Shape1.png" alt="shape1.png"/><br></br>
                         </div>
                         <br></br>
                         <h5>Samples and Ordering</h5>

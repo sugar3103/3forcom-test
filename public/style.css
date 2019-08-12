@@ -1,4 +1,5 @@
-a, u {
+a,
+u {
     color: white !important;
     text-decoration: none;
 }
@@ -9,8 +10,8 @@ a:hover {
     text-decoration: none;
 }
 
-button:hover, 
-.inputButton:hover{
+button:hover,
+.inputButton:hover {
     color: white !important;
     background: black !important;
 }
@@ -26,6 +27,7 @@ div {
 .position-relative {
     position: relative;
 }
+
 
 /* Header start */
 
@@ -53,6 +55,10 @@ div {
     width: 10%;
 }
 
+.third-nav {
+    padding-left: 150px !important;
+}
+
 .third-nav ul li {
     text-decoration: none;
     list-style-type: none;
@@ -76,9 +82,19 @@ div {
     outline: inherit;
 }
 
+
 /* Header end */
 
+
 /* Body start */
+
+.banner-img {
+    background-image: url("../assets/Layer44.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    height: 400px
+}
 
 .padding-left {
     padding-left: 15px;
@@ -91,13 +107,14 @@ div {
     padding-top: 50px;
 }
 
-.banner h3, .banner h5 {
+.banner h3,
+.banner h5 {
     color: white;
 }
 
-/* .banner-text{
-    margin-top: -300px;
-} */
+.info-3 {
+    margin-top: 230px;
+}
 
 .banner-box {
     background: #ecf5fd;
@@ -155,26 +172,32 @@ div {
     border-radius: 20px;
     margin-top: -5px;
 }
-.square-infor{
+
+.square-infor {
     width: 200px;
     height: 200px;
     background: rgba(123, 193, 179, 0.2);
     padding: 50px;
 }
-.square-infor img{
+
+.square-infor img {
     width: 100px;
 }
-.infor-contain{
+
+.infor-contain {
     padding: 50px;
-    margin-left: 21%;
-}
-.infor-contain2{
-    padding: 50px;
-    width: 500px;
-    margin-left: 50px; 
+    margin-left: 22%;
 }
 
+.infor-contain2 {
+    padding: 50px;
+    width: 500px;
+    margin-left: 11%;
+}
+
+
 /* Body End */
+
 
 /* Footer start */
 
@@ -187,16 +210,18 @@ div {
     margin-left: 20px;
     margin-top: 12px;
 }
-.footer-2nd{
+
+.footer-2nd {
     background: #7bc1b3;
-    
 }
 
 .footer-menu ul li:nth-child(1) {
     list-style-type: none;
 }
 
-.footer-menu ul li:nth-child(2), .footer-menu ul li:nth-child(3), .footer-menu ul li:nth-child(4) {
+.footer-menu ul li:nth-child(2),
+.footer-menu ul li:nth-child(3),
+.footer-menu ul li:nth-child(4) {
     margin-left: 30px;
     color: white;
 }
@@ -206,63 +231,68 @@ div {
     top: 5px;
 }
 
-.footer-icon a{
+.footer-icon a {
     background: #68b4a5 !important;
     color: white!important;
     padding-left: 10px;
     font-size: 30px;
 }
-.footer-2nd-contain{
+
+.footer-2nd-contain {
     background: #7bc1b3;
     width: 100%;
     height: 80px;
 }
-.footer-2nd-right{
+
+.footer-2nd-right {
     right: 0;
     margin-top: 10px;
     padding: 20px;
     color: white;
 }
-.footer-2nd-left{
+
+.footer-2nd-left {
     left: 0;
     width: 53%;
     padding: 20px;
     color: white;
 }
 
+
 /* Footer end */
 
-/* Calculator start */
 
-.btn {
-    border: 1px solid black;
-    width: 90px !important;
-    height: 90px !important;
-    border-radius: 50% !important;
-    margin-left: 10px !important;
-    margin-top: 5px !important;
-    font-size: 35px !important;
-}
+/* Responsive start  */
 
-.contain-500 {
-    margin-top: -30px !important;
-    padding-top: 0 !important;
-    height: 500px !important;
-}
 
-.jumbo-120 {
-    height: 120px !important;
-    padding-top: 10px !important;
-}
+/* Mobile First 
+Mobile First mean set the @media Screen for small screen first 
+Like this, the Website will load faster on Mobile*/
 
-.jumbotron::after {
-    clear: both;
-    display: inline;
-}
 
-.custom-btn {
-    width: 190px !important;
-    height: 90px !important;
-}
+/* Smart phone nhỏ */
 
-/* Calculator End  */
+@media screen and (min-width: 240px) {}
+
+
+/* Iphone(320 x 640) */
+
+@media screen and (min-width: 320px) {}
+
+
+/* Table Nhỏ(480 x 640) */
+
+@media screen and (min-width: 480px) {}
+
+
+/* Ipad dọc(768 x 1024) */
+
+@media screen and (min-width: 768px) {}
+
+
+/* Ipad ngang(1024 x 768) */
+
+@media screen and (min-width: 1024px) {}
+
+
+/* Responsive End  */
